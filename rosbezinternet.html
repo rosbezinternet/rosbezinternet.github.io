@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РосБезИнтернет</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid #3b82f6;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+
+        .badge-site {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            color: #3b82f6;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: bold;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+            text-transform: uppercase;
+        }
+
+        .card-desc {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .box-bad {
+            background-color: rgba(239, 68, 68, 0.1);
+            border-left: 5px solid #ef4444;
+            color: #fca5a5;
+        }
+
+        .box-good {
+            background-color: rgba(34, 197, 94, 0.1);
+            border-left: 5px solid #22c55e;
+            color: #86efac;
+        }
+
+        .box strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        code {
+            background-color: #0f172a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            color: #3b82f6;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #334155;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>РосБезИнтернет</h1>
+        <p>Интерактивный гид по выживанию в сети для современных школьников</p>
+        <div class="badge-site">Официальная памятка-сайт проекта</div>
+    </div>
+
+    <div class="container">
+
+        <!-- БЛОК 1 -->
+        <div class="card">
+            <div class="card-title">1. Пароли и Твой Сейф (Защита аккаунтов)</div>
+            <div class="card-desc">Твой пароль — это единственный замок от твоей цифровой личности. Если он один на все сайты, тебя взломают за несколько минут.</div>
+            
+            <div class="box box-bad">
+                <strong>❌ КАК НЕ НАДО:</strong>
+                Ставить пароли типа <code>qwerty12345</code>, <code>marina2010</code>, свой номер телефона или использовать один пароль и для личной почты, и для сомнительного сайта с игровыми модами. При утечке базы одного форума мошенники мгновенно зайдут на все твои основные аккаунты.
+            </div>
+            
+            <div class="box box-good">
+                <strong>✅ КАК НАДО:</strong>
+                Использовать уникальные комбинации для каждого важного сервиса. Формула идеального пароля: 3-4 случайных слова + спецсимволы + заглавные буквы (например, <code>Tree!Laptop34_Cat</code>). <strong>Обязательно активируй 2FA (двухфакторную аутентификацию)</strong> в Telegram, Discord, Steam, Госуслугах и Epic Games. Даже если хакеры узнают твой пароль, они физически не смогут войти без одноразового кода с твоего смартфона.
+            </div>
+        </div>
+
+        <!-- БЛОК 2 -->
+        <div class="card">
+            <div class="card-title">2. Фишинг — Не клюй на крючок (Ссылки-приманки)</div>
+            <div class="card-desc">Фишинг — это фейковые сайты-двойники, которые визуально неотличимы от Steam, VK, Discord или Roblox, но созданы исключительно для перехвата твоих логинов и паролей.</div>
+            
+            <div class="box box-bad">
+                <strong>❌ КАК НЕ НАДО:</strong>
+                Слепо кликать по ссылкам от друзей в ЛС или из игровых пабликов с яркими предложениями: «Забирай бесплатный Discord Nitro», «Раздача скинов / валюты», «Проголосуй за наш клан на турнире». Помни: аккаунт твоего друга могли взломать и рассылать спам автоматическими скриптами.
+            </div>
+            
+            <div class="box box-good">
+                <strong>✅ КАК НАДО:</strong>
+                Всегда внимательно проверяй адресную строку браузера перед вводом любых данных. Если вместо официального домена <code>telegram.org</code> ты видишь <code>telegraam-premium.ru</code>, а вместо <code>steamcommunity.com</code> написано <code>stearncommunity.com</code> — это 100% скам-страница. Немедленно закрывай вкладку.
+            </div>
+        </div>
+
+        <!-- БЛОК 3 -->
+        <div class="card">
+            <div class="card-title">3. «Читы», Модификации и Стиллеры (Защита устройств)</div>
+            <div class="card-desc">Хакеры прекрасно знают, что подростки ищут способы прокачать игры, и активно упаковывают опасные вирусы в самые заманчивые файлы.</div>
+            
+            <div class="box box-bad">
+                <strong>❌ КАК НЕ НАДО:</strong>
+                Скачивать «бесплатные читы», «взломанный софт», приватные сервера или утилиты для накрутки игровой валюты с YouTube-видео, сомнительных форумов или из Telegram-ботов, особенно если инструкция требует «отключить антивирус или защитник Windows перед распаковкой».
+            </div>
+            
+            <div class="box box-good">
+                <strong>✅ КАК НАДО:</strong>
+                Держи встроенный защитник операционной системы всегда активным и обновленным. Абсолютное большинство бесплатных «читов» и трейнеров содержат скрытые трояны-стиллеры. Они работают незаметно в фоновом режиме, мгновенно копируя файлы куки (cookies), сохраненные в браузере пароли и сессии мессенджеров, отправляя их на сервер злоумышленников.
+            </div>
+        </div>
+
+        <!-- БЛОК 4 -->
+        <div class="card">
+            <div class="card-title">4. Коды из СМС — Твоя цифровая подпись</div>
+            <div class="card-desc">Одноразовые коды подтверждения из СМС или push-уведомлений — это юридический аналог твоей личной подписи на бумаге.</div>
+            
+            <div class="box box-bad">
+                <strong>❌ КАК НЕ НАДО:</strong>
+                Диктовать, пересылать текстом или отправлять скриншоты кодов подтверждения третьим лицам. Абсолютно неважно, кем представляется собеседник: «администратором сервера», «агентом технической поддержки платформы» или твоим знакомым, который якобы случайно указал твой номер. Настоящая поддержка никогда не запрашивает личные коды доступа.
+            </div>
+            
+            <div class="box box-good">
+                <strong>✅ КАК НАДО:</strong>
+                Всегда полностью вчитывайся в текст входящего СМС-сообщения. Если там написано: «Код для авторизации / подтверждения переноса аккаунта: ХХХХ. Никому не сообщайте», а в чате тебя уверяют, что это просто «технический код для верификации связи» — тебя прямо сейчас пытаются взломать. Прерывай диалог и отправляй аккаунт в черный список.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Разработано в рамках итогового индивидуального проекта по информатике<br>
+    </div>
+
+</body>
+</html>
